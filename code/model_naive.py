@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-
+## 두번째 업로드
 #### 다시 업로드 해보기
 class NaiveNet(nn.Module):
     def __init__(self, vocab_size, ddi_adj, emb_dim=64, device = torch.device('cpu:0')):
@@ -38,11 +38,7 @@ class NaiveNet(nn.Module):
             i1 = mean_embedding(self.dropout(self.embeddings[0](torch.LongTensor(adm[0]).unsqueeze(dim=0).to(self.device)))) # (1,1,dim)
             i2 = mean_embedding(self.dropout(self.embeddings[1](torch.LongTensor(adm[1]).unsqueeze(dim=0).to(self.device))))
             i1_seq.append(i1)
-            i2_seq.append(i2)
-        
-        
-        
-        
+            i2_seq.append(i2)      
 
         i1_seq = torch.cat(i1_seq, dim=1) #(1,seq,dim)
         i2_seq = torch.cat(i2_seq, dim=1) #(1,seq,dim)
