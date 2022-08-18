@@ -17,3 +17,4 @@ The naive model for medication recommendation
 
 
 4. 덴스 벡터를 2개의 FC layer를 통해 최종 의약품 차원의 벡터로 변환
+ 
