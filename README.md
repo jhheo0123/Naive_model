@@ -1,6 +1,6 @@
 # Naive_model
 The naive model for medication recommendation
-
+---------------------------------------------------------------------------
 
 [Process]
 
@@ -17,4 +17,15 @@ The naive model for medication recommendation
 
 
 4. 덴스 벡터를 2개의 FC layer를 통해 최종 의약품 차원의 벡터로 변환
- 
+
+
+---------------------------------------------------------------------------
+
+
+[Training]
+
+python code/train_naive.py --model_name NaiveNet --ddi
+
+[Test]
+
+python code/train_naive.py --model_name NaiveNet --ddi --resume_path Epoch_{}_JA_{}_DDI_{}.model --eval
