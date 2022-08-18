@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 
-
+#### 다시 업로드 해보기
 class NaiveNet(nn.Module):
     def __init__(self, vocab_size, ddi_adj, emb_dim=64, device = torch.device('cpu:0')):
         super(NaiveNet,self).__init__()
